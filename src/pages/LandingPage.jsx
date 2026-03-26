@@ -32,21 +32,21 @@ export function LandingPage() {
     }, [isAuthenticated, authLoading, navigate, user]);
 
     return (
-        <div className="min-h-screen bg-surface selection:bg-brand-500/30">
+        <div className="min-h-screen bg-surface selection:bg-brand-500/30 overflow-x-hidden">
             {/* Top Navigation */}
             <nav className="border-b border-white/5 bg-surface/50 backdrop-blur-md fixed top-0 w-full z-50">
-                <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-                    <div className="flex items-center gap-3">
-                        <div className="h-10 w-10 rounded-xl bg-brand-500 flex items-center justify-center shadow-lg shadow-brand-500/20">
-                            <Heart className="h-5 w-5 text-white" fill="white" />
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between">
+                    <div className="flex items-center gap-2 sm:gap-3 shrink-0">
+                        <div className="h-8 w-8 sm:h-10 sm:w-10 rounded-xl bg-brand-500 flex items-center justify-center shadow-lg shadow-brand-500/20 shrink-0">
+                            <Heart className="h-4 w-4 sm:h-5 sm:w-5 text-white" fill="white" />
                         </div>
-                        <span className="font-display text-2xl text-white tracking-tight">GolfGives</span>
+                        <span className="font-display text-lg sm:text-2xl text-white tracking-tight shrink-0">GolfGives</span>
                     </div>
-                    <div className="flex items-center gap-4">
-                        <Link to="/login" className="text-white/70 hover:text-white text-sm font-medium transition-colors">
+                    <div className="flex items-center gap-3 sm:gap-4 shrink-0">
+                        <Link to="/login" className="text-white/70 hover:text-white text-xs sm:text-sm font-medium transition-colors whitespace-nowrap shrink-0">
                             Sign In
                         </Link>
-                        <Button onClick={() => navigate("/register")} className="shadow-sm shadow-brand-500/10 hover:shadow-md hover:shadow-brand-500/20 transition-all">
+                        <Button onClick={() => navigate("/register")} size="sm" className="shadow-sm shadow-brand-500/10 hover:shadow-md hover:shadow-brand-500/20 transition-all whitespace-nowrap shrink-0 text-xs sm:text-sm px-3 py-1.5 sm:px-4 sm:py-2">
                             Get Started
                         </Button>
                     </div>

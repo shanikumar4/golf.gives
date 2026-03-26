@@ -69,8 +69,8 @@ const displayPercentage = charity?.percentage || user?.charityPercentage ||  use
         <div className="space-y-6 max-w-6xl">
             {/* Header */}
             <div>
-                <h1 className="font-display text-3xl text-white">
-                    Hello, <span className="gradient-text">{user?.fullName?.split(" ")[0]}</span> 👋
+                <h1 className="font-display text-2xl md:text-3xl text-white">
+                    Hello, <span className="gradient-text break-all sm:break-normal">{user?.fullName?.split(" ")[0]}</span> 👋
                 </h1>
                 <p className="text-white/50 mt-1">Here's your impact overview</p>
             </div>
